@@ -1,18 +1,18 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
+int ledPin = 13; // choose the pin for the LED
 
 void setup() {
   // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+  pinMode(ledPin, OUTPUT); // declare the LED pin as an OUTPUT
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  int randomValue = random(100); // generate a random number between 0 and 99
+  if (randomValue < 50) {
+    digitalWrite(ledPin, HIGH); // turn the LED on
+  } else {
+    digitalWrite(ledPin, LOW); // turn the LED off
+  }
 }
