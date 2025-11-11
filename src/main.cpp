@@ -10,7 +10,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  int randomValue = random(50); // generate a random number between 0 and 99
+  int randomValue = random(60); // generate a random number between 0 and 99
   Serial.println(randomValue);
   
   digitalWrite(ledPin, HIGH); // turn the LED on (HIGH is the voltage level)
