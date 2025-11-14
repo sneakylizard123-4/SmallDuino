@@ -3,14 +3,14 @@
 int ledPin = 13; // choose the pin for the LED
 bool ledState = LOW; // ledState used to set the LED
 unsigned long previousMillisLed = 0;
-long OnTimeLed = 250;
-long OffTimeLed = 750;
+unsigned long OnTimeLed = 250;
+unsigned long OffTimeLed = 750;
 
 int indPin = 12; // choose the pin for an indicator
 bool indState = LOW; // ledState used to set the LED
 unsigned long previousMillisInd = 0;
-long OnTimeInd = 100;
-long OffTimeInd = 400;
+unsigned OnTimeInd = 100;
+unsigned long OffTimeInd = 400;
 
 //remove soon
 unsigned long interval = 500;  // interval at which to blink (milliseconds)
