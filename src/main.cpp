@@ -28,11 +28,11 @@ void loop() {
   unsigned long currentMillis = millis();
 
   unsigned int randomValue = random(60); // generate a random number between 0 and 99
-  Serial.print("LED State: ");
+  Serial.print("LEDState: ");
   Serial.print(ledState);
   Serial.print(", ");
 
-  Serial.print("Indicator State: ");
+  Serial.print("IndicatorState: ");
   Serial.print(indState);
   Serial.print(", ");
 
